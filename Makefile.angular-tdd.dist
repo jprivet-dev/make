@@ -1,0 +1,11 @@
+SHELL:=/bin/bash
+
+# Copy this file to the root of your project
+# $ cd path/to/your/project
+# $ cp make/Makefile.angular-tdd.dist Makefile
+
+ANGULAR_TDD = make/angular-tdd*.mk
+-include $(sort $(wildcard $(ANGULAR_TDD)))
+
+SHARED = make/shared/*.mk
+-include $(sort $(wildcard $(SHARED)))
