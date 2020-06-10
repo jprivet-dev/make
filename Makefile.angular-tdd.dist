@@ -4,7 +4,7 @@ SHELL:=/bin/bash
 # $ cd path/to/your/project
 # $ cp make/Makefile.angular-tdd.dist Makefile
 
-ANGULAR_TDD = make/angular-tdd*.mk
+ANGULAR_TDD = make/angular-tdd/*.mk
 -include $(sort $(wildcard $(ANGULAR_TDD)))
 
 SHARED = make/shared/*.mk
